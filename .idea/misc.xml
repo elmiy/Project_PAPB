@@ -6,6 +6,7 @@
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/drawable/background.xml" value="0.127" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/drawable/background_button.xml" value="0.127" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/drawable/background_card.xml" value="0.127" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/drawable/border.xml" value="0.127" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/drawable/delete_icon.xml" value="0.127" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/drawable/ic_money_icon.xml" value="0.127" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/drawable/money_icon_green.xml" value="0.127" />
@@ -15,6 +16,7 @@
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/font/title.xml" value="0.20572916666666666" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/layout/detail_pengeluaran.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/layout/tambah.xml" value="0.22" />
       </map>
     </option>
   </component>

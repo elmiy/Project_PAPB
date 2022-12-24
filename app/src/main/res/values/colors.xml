@@ -10,4 +10,5 @@
     <color name="main">#F7C959</color>
     <color name="info">#ACDB99</color>
     <color name="danger">#E34746</color>
+    <color name="gray">#D9D9D9</color>
 </resources>
