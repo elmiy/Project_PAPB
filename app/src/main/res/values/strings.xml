@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TugasAkhir</string>
+    <string name="linkToDaftar"><u>Buat akun</u></string>
+    <string name="linkToLogin"><u>Login</u></string>
+    <string name="forgotPassword">Lupa password?</string>
+    <string name="descDaftar">Daftar akun untuk merasakan pengalaman \npenggunaan aplikasi</string>
+    <string name="descLogin">Masukkan username dan password anda\nuntuk masuk ke dalam akun</string>
+
+
 </resources>
