@@ -1,6 +1,9 @@
 package com.example.tugasakhir.Activity;
 
+import static android.content.ContentValues.TAG;
+
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -50,6 +53,7 @@ public class ListPengeluaran extends AppCompatActivity {
                 Toast.makeText(ListPengeluaran.this, "Kode="+kode+" Pesan="+pesan, Toast.LENGTH_SHORT).show();
 
                 listData = response.body().getData();
+                Log.d(TAG, String.valueOf(listData));
                 adData = new AdapterData(ListPengeluaran.this, listData);
                 rvData.setAdapter(adData);
                 adData.notifyDataSetChanged();
