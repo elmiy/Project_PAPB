@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_linear">
+    android:background="@drawable/background_linear"
+    tools:context=".Activity.ListPengeluaran">
 
     <ImageView
         android:layout_width="20dp"
@@ -91,310 +93,242 @@
             app:layout_constraintTop_toTopOf="parent"></TextView>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/card_layout"
-        android:layout_width="352dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="188dp"
-        android:background="@drawable/background_card"
-        android:elevation="4dp"
-        android:orientation="vertical"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="164dp"
+        tools:listitem="@layout/item_pengeluaran">
+    </androidx.recyclerview.widget.RecyclerView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+<!--    <LinearLayout-->
+<!--        android:id="@+id/card_layout"-->
+<!--        android:layout_width="352dp"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:layout_marginTop="290dp"-->
+<!--        android:background="@drawable/background_card"-->
+<!--        android:elevation="4dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintHorizontal_bias="0.542"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="DuplicateIds">-->
 
-            <TextView
-                android:id="@+id/input_tanggal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="5dp"
-                android:text="3 Desember 2022"
-                android:textColor="#80000000" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp">-->
 
-            <ImageView
-                android:id="@+id/delete_data"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginLeft="170dp"
-                android:src="@drawable/delete_icon" />
-        </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/input_tanggal"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:paddingLeft="5dp"-->
+<!--                android:text="2 Desember 2022"-->
+<!--                android:textColor="#80000000" />-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:orientation="horizontal">
+<!--            <ImageView-->
+<!--                android:id="@+id/delete_data"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginLeft="170dp"-->
+<!--                android:src="@drawable/delete_icon" />-->
+<!--        </LinearLayout>-->
 
-            <View
-                android:layout_width="352dp"
-                android:layout_height="1dp"
-                android:background="#D9D9D9" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
-            <ImageView
-                android:id="@+id/icon_money"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/money_icon_red"
-                />
-            <TextView
-                android:id="@+id/text_keterangan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:paddingLeft="10dp"
-                android:text="Laundry"
-                android:textColor="@color/black" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:orientation="horizontal">-->
 
-            <TextView
-                android:id="@+id/input_nominal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="176dp"
-                android:text="-25.000"
-                android:textColor="#80000000" />
-        </LinearLayout>
-    </LinearLayout>
+<!--            <View-->
+<!--                android:layout_width="352dp"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#D9D9D9" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/icon_money"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:src="@drawable/money_icon_green"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_keterangan"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_regular"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:text="Uang Jajan"-->
+<!--                android:textColor="@color/black" />-->
 
-    <LinearLayout
-        android:id="@+id/card_layout"
-        android:layout_width="352dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="290dp"
-        android:background="@drawable/background_card"
-        android:elevation="4dp"
-        android:orientation="vertical"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateIds">
+<!--            <TextView-->
+<!--                android:id="@+id/input_nominal"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:paddingLeft="174dp"-->
+<!--                android:text="+200.000"-->
+<!--                android:textColor="#80000000" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+<!--    <LinearLayout-->
+<!--        android:id="@+id/card_layout"-->
+<!--        android:layout_width="352dp"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:layout_marginTop="392dp"-->
+<!--        android:background="@drawable/background_card"-->
+<!--        android:elevation="4dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintHorizontal_bias="0.542"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="DuplicateIds">-->
 
-            <TextView
-                android:id="@+id/input_tanggal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="5dp"
-                android:text="2 Desember 2022"
-                android:textColor="#80000000" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp">-->
 
-            <ImageView
-                android:id="@+id/delete_data"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginLeft="170dp"
-                android:src="@drawable/delete_icon" />
-        </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/input_tanggal"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:paddingLeft="5dp"-->
+<!--                android:text="2 Desember 2022"-->
+<!--                android:textColor="#80000000" />-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:orientation="horizontal">
+<!--            <ImageView-->
+<!--                android:id="@+id/delete_data"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginLeft="170dp"-->
+<!--                android:src="@drawable/delete_icon" />-->
+<!--        </LinearLayout>-->
 
-            <View
-                android:layout_width="352dp"
-                android:layout_height="1dp"
-                android:background="#D9D9D9" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
-            <ImageView
-                android:id="@+id/icon_money"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/money_icon_green"
-                />
-            <TextView
-                android:id="@+id/text_keterangan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:paddingLeft="10dp"
-                android:text="Uang Jajan"
-                android:textColor="@color/black" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:orientation="horizontal">-->
 
-            <TextView
-                android:id="@+id/input_nominal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="174dp"
-                android:text="+200.000"
-                android:textColor="#80000000" />
-        </LinearLayout>
-    </LinearLayout>
+<!--            <View-->
+<!--                android:layout_width="352dp"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#D9D9D9" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/icon_money"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:src="@drawable/money_icon_red"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_keterangan"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_regular"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:text="Nonton"-->
+<!--                android:textColor="@color/black" />-->
 
-    <LinearLayout
-        android:id="@+id/card_layout"
-        android:layout_width="352dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="392dp"
-        android:background="@drawable/background_card"
-        android:elevation="4dp"
-        android:orientation="vertical"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateIds">
+<!--            <TextView-->
+<!--                android:id="@+id/input_nominal"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:paddingLeft="156dp"-->
+<!--                android:text="-40.000"-->
+<!--                android:textColor="#80000000" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+<!--    <LinearLayout-->
+<!--        android:id="@+id/card_layout"-->
+<!--        android:layout_width="352dp"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:layout_marginTop="494dp"-->
+<!--        android:background="@drawable/background_card"-->
+<!--        android:elevation="4dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintHorizontal_bias="0.542"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="DuplicateIds">-->
 
-            <TextView
-                android:id="@+id/input_tanggal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="5dp"
-                android:text="2 Desember 2022"
-                android:textColor="#80000000" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp">-->
 
-            <ImageView
-                android:id="@+id/delete_data"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginLeft="170dp"
-                android:src="@drawable/delete_icon" />
-        </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/input_tanggal"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:paddingLeft="5dp"-->
+<!--                android:text="2 Desember 2022"-->
+<!--                android:textColor="#80000000" />-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:orientation="horizontal">
+<!--            <ImageView-->
+<!--                android:id="@+id/delete_data"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginLeft="170dp"-->
+<!--                android:src="@drawable/delete_icon" />-->
+<!--        </LinearLayout>-->
 
-            <View
-                android:layout_width="352dp"
-                android:layout_height="1dp"
-                android:background="#D9D9D9" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
-            <ImageView
-                android:id="@+id/icon_money"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/money_icon_red"
-                />
-            <TextView
-                android:id="@+id/text_keterangan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:paddingLeft="10dp"
-                android:text="Nonton"
-                android:textColor="@color/black" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:orientation="horizontal">-->
 
-            <TextView
-                android:id="@+id/input_nominal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="156dp"
-                android:text="-40.000"
-                android:textColor="#80000000" />
-        </LinearLayout>
-    </LinearLayout>
+<!--            <View-->
+<!--                android:layout_width="352dp"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#D9D9D9" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/icon_money"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:src="@drawable/money_icon_red"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_keterangan"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_regular"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:text="Bahan Makanan"-->
+<!--                android:textColor="@color/black" />-->
 
-    <LinearLayout
-        android:id="@+id/card_layout"
-        android:layout_width="352dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="494dp"
-        android:background="@drawable/background_card"
-        android:elevation="4dp"
-        android:orientation="vertical"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateIds">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
-
-            <TextView
-                android:id="@+id/input_tanggal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="5dp"
-                android:text="2 Desember 2022"
-                android:textColor="#80000000" />
-
-            <ImageView
-                android:id="@+id/delete_data"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginLeft="170dp"
-                android:src="@drawable/delete_icon" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_width="352dp"
-                android:layout_height="1dp"
-                android:background="#D9D9D9" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
-            <ImageView
-                android:id="@+id/icon_money"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/money_icon_red"
-                />
-            <TextView
-                android:id="@+id/text_keterangan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:paddingLeft="10dp"
-                android:text="Bahan Makanan"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/input_nominal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="120dp"
-                android:text="-150.000"
-                android:textColor="#80000000" />
-        </LinearLayout>
-    </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/input_nominal"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:paddingLeft="120dp"-->
+<!--                android:text="-150.000"-->
+<!--                android:textColor="#80000000" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

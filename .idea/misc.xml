@@ -13,10 +13,21 @@
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/drawable/money_icon_grey.xml" value="0.127" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/drawable/money_icon_red.xml" value="0.127" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/font/font.xml" value="0.2046875" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/font/poppins_bold.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/font/poppins_light.xml" value="0.20572916666666666" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/font/poppins_medium.xml" value="0.20572916666666666" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/font/poppins_regula.xml" value="0.20572916666666666" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/font/poppins_semibold.xml" value="0.20572916666666666" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/font/title.xml" value="0.20572916666666666" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/layout/activity_login.xml" value="0.16145833333333334" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/layout/activity_profil.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/layout/activity_register.xml" value="0.17552083333333332" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/layout/detail_pengeluaran.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/layout/item_pengeluaran.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/layout/list_pengeluaran.xml" value="0.14666666666666667" />
         <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/layout/tambah.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/TugasAkhir/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.127" />
       </map>
     </option>
   </component>
