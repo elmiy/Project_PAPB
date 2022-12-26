@@ -80,10 +80,11 @@
 
             <TextView
                 android:id="@+id/tv_nominal"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="24dp"
+                android:gravity="right"
                 android:fontFamily="@font/poppins_semibold"
-                android:paddingLeft="176dp"
                 android:text="-25.000"
                 android:textColor="#80000000" />
         </LinearLayout>
