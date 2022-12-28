@@ -18,7 +18,7 @@
         android:text="Keluar"
         android:fontFamily="@font/poppins_medium"
         android:textSize="14sp"
-        android:textColor="#D9D9D9"
+        android:textColor="@color/danger"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintTop_toTopOf="@id/header_profile"
