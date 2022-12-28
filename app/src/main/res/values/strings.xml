@@ -5,6 +5,8 @@
     <string name="forgotPassword">Lupa password?</string>
     <string name="descDaftar">Daftar akun untuk merasakan pengalaman \npenggunaan aplikasi</string>
     <string name="descLogin">Masukkan username dan password anda\nuntuk masuk ke dalam akun</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

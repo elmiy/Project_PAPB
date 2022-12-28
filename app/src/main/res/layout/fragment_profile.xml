@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.profile.ProfileFragment">
+
+    <include
+        android:id="@+id/header_profile"
+        layout="@layout/base_header"/>
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="Keluar"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:textColor="#D9D9D9"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="@id/header_profile"
+        app:layout_constraintEnd_toEndOf="@id/header_profile"
+        app:layout_constraintBottom_toBottomOf="@id/header_profile"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F7C959"
+        app:layout_constraintTop_toBottomOf="@id/header_profile"/>
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="36dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/pb_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_avatar"
+        app:layout_constraintBottom_toBottomOf="@id/iv_avatar"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="42dp"
+        android:text="Nama"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/iv_avatar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/tv_name"
+        app:layout_constraintTop_toTopOf="@id/tv_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Ariana"/>
+
+    <View
+        android:id="@+id/separator_name"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="#F7C959"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="Email"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/separator_name"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_email_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="@id/tv_email"
+        app:layout_constraintStart_toStartOf="@id/tv_name_value"
+        app:layout_constraintEnd_toEndOf="@id/tv_name_value"
+        app:layout_constraintBottom_toBottomOf="@id/tv_email"
+        tools:text="ariana@gmail.com"/>
+
+    <View
+        android:id="@+id/separator_email"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="#F7C959"
+        app:layout_constraintTop_toBottomOf="@id/tv_email"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
